@@ -1,0 +1,506 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+/*container*/
+.container{
+    width: 90%;
+    margin: auto;
+}
+/*grid*/
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 28.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 49%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.row::after{
+    content="";
+    clear: both;
+    display: table;
+}
+.margin{
+    margin-top: 100px;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    display: flex;
+}
+.container a .logo{
+    margin-top: 30px;
+}
+nav ul li a{
+    display: block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(13,133,202);
+}
+/*end of nav bar*/
+/*start of header*/
+header{
+    background-image: url(../images/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+header .content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+header .content h1{
+    text-align: center;
+    font-size: 50px;
+}
+header .content p{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+header .content p span{
+    color: yellow;
+}
+header .content button{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+}
+header .content button:hover{
+    background-color: yellow;
+    color: white;
+}
+/*end of header*/
+/*start of innovate*/
+.innovate{
+    display: block;
+}
+.innovate .item1{
+    margin-left: 47px;
+}
+.innovate .item1 h2{
+    font-size: 40px;
+    color: rgb(13,133,202);
+    margin-bottom: 10px;
+}
+.innovate .item1 .p1{
+    font-size: 18px;
+    text-align: justify;
+    color: #888;
+    margin-bottom: 40px;
+}
+.innovate .item1 div{
+  display: flex;
+    margin-bottom: 10px;
+}
+.innovate .item1 div i{
+    font-size: 20px;
+    color: rgb(13,133,202);
+    margin-right: 15px;
+}
+.innovate .item1 div p{
+    color: #888;
+}
+.works{
+    margin-top: 600px;
+    text-align: center;
+}
+.works h2{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.works p{
+    font-size: 18px;
+    color: #888;
+    width: 60%;
+    margin: auto;
+}
+.works .picture1 img,.works .picture2 img{
+    width: 455px;
+    height: 62vh;
+    transition: 0.7s;
+}
+.works div{
+    overflow: hidden;
+}
+.works .picture1 img:hover,.works .picture2 img:hover{
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+.works .picture1{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+.works .picture2{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+/*end of innovate*/
+/*start of strategy*/
+.strategy{
+    padding: 10px;
+    background-color: black;
+    height: 75vh;
+}
+.strategy .left img{
+    width: 100%;
+    height: 70vh;
+}
+.right{
+    margin-left: 80px;
+}
+.right .col-6{
+    color: white;
+}
+.right i{
+    font-size: 28px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+.right span{
+    font-size: 25px;
+}
+.right p{
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 8px;
+    color: #888;
+    line-height: 150%;
+}
+.right a{
+    display: block;
+    margin-left: 5px;
+    margin-top: 12px;
+    color: white;
+}
+/*end of strategy*/
+/*start of test*/
+.test{
+    text-align: center;
+    position: relative;
+}
+.test h2{
+   font-size: 60px; 
+}
+.test .p2{
+    font-size: 26px;
+    color: #888;
+    width: 70%;
+    margin: auto;
+    margin-top: 26px;
+    line-height: 150%;
+}
+.test div{
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.test div img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.test div p{
+    line-height: 400%;
+    font-size: 18px;
+    color: #888;
+}
+/*end of test*/
+/*start of services*/
+.services{
+    margin-top: 260px;
+}
+.services h2{
+    font-size: 60px;
+    text-align: center;
+}
+.services .col-4{
+    margin-top: 60px;
+    margin-left: 34px;
+    margin-right: 25px;
+    position: relative;
+}
+.services .col-4 i{
+  font-size: 35px;
+    color: rgb(13,133,202);
+    position: absolute;
+    top: 21px;
+    left: -44px;
+}
+.services h3{
+    color:darkslategrey;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.services .col-4 p{
+    color: #888;
+    font-size:19px;
+    margin-bottom: 30px;
+    line-height: 130%;
+}
+.services .col-4 a{
+    color: rgb(13,133,202);
+    font-size: 17px;
+    text-decoration: none;
+}
+/*end of services*/
+/*start of about us*/
+.about{
+    margin-top: 200px;
+}
+.about .left h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.about .left .p3{
+    color: #888;
+    line-height: 140%;
+    font-size: 21px;
+}
+.about .left .col-6 i{
+    color: rgb(13,133,202);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.about .left .col-6 h3{
+    font-size: 20px;
+    color:darkslategrey;
+    margin-bottom: 20px;
+}
+.about .left .p4{
+    color: #888;
+    line-height: 140%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.about .left a{
+    text-decoration: none;
+    color: rgb(13,133,202);
+    font-size: 18px;
+}
+.about .right img{
+    width: 600px;
+    height: 560px;
+    margin-top: 130px;
+}
+/*end of about us*/
+/*start of our team*/
+.team h2{
+    margin-top: 1400px;
+    text-align: center;
+    font-size: 60px;
+}
+.team img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.team .col-4{
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.team cite{
+    display: block;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.team p{
+    font-size: 18px;
+    color: #888;
+    text-align: justify;
+}
+.team .teamsoial{
+    margin-top: 40px;
+}
+.team .teamsoial ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.team .teamsoial ul li{
+    margin-right: 20px;
+}
+.team .teamsoial ul li a i{
+    font-size: 30px;
+    color: #888;
+}
+/*end of our team*/
+/*start of contact us*/
+.contact{
+    margin-top: 600px;
+    background-color: rgb(240,230,240);
+    height: 1000px;
+}
+.contact h2{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.contact .form{
+    background-color: white;
+    padding: 40px 40px 80px 40px;
+  margin-left: 370px;
+    margin-bottom: 240px;
+    position: relative;
+}
+lable{
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 18px;
+}
+.contact h3{
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+.nm{
+    display: flex;
+}
+input[type="text"],input[type="email"],textarea{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #888;
+}
+input[type="submit"]{
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px 30px;
+    background-color: rgb(13,133,202);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+
+    
+}
+input:focus,textarea:focus{
+    outline: none;
+    border: 1px solid rgb(13,133,202);
+}
+/*end of contact us*/
+/*start of footer*/
+footer{
+    background-color:#444;
+    height: 300px;
+    position: relative;
+}
+footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    padding-bottom: 10px;
+}
+footer ul li a{
+   text-decoration: none;
+    color: #888;
+}
+footer .fu ul{
+    display: flex;
+}
+footer .fu ul li{
+    padding-right:10px;
+    
+}
+footer .lc{
+    margin-left: 90px;
+    margin-top: -100px;
+}
+footer .ll{
+    margin-top: -100px;
+}
+footer .fu{
+    margin-top: -100px;
+}
+footer .lr{
+    margin-left: 300px;
+    margin-top: -100px;
+}
+footer input[type="submit"]{
+    position: absolute;
+    color: white;
+    background-color: rgb(13,133,202);
+    top: 70%;
+    left: 77%;
+    font-size: 18px;
+    
+}
+/*end of footer*/
